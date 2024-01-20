@@ -10,7 +10,7 @@ from = "now-6m" #this is the default value
 #index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 #language = "kuery"
 
-name = "Excessive WEB Traffic"
+#name = "Excessive WEB Traffic"
 
 risk_score = 70
 severity = "critical"
