@@ -1,0 +1,38 @@
+#[metadata]
+#creation_date = "2024/01/25"
+#updated_date = "2023/10/23"
+
+[rule]
+rule_id = "00000000-0000-0000-0000-000000000001"
+author = ["Anas TASTI"]
+description = "DETECT NMAP AND NIKTO"
+from = "now-6m" #this is the default value
+#index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
+language = "kuery"
+
+name = "web scanner activity: NMAP & NIKTO"
+
+risk_score = 70
+
+severity = "critical"
+tags = ["WEB"]
+index = ["logs-*"]
+type = "query"
+
+query = ''' event.dataset : zeek.http and user_agent.original: *Nmap* or user_agent.original: *Nikto* '''
+
+
+#MITRE section
+
+[[rule.threat]]
+framework = "MITRE ATT&CK"
+[[rule.threat.technique]]
+id = "T1046"
+name = "Network Service Discovery"
+reference = "https://attack.mitre.org/techniques/T1046/"
+
+
+[rule.threat.tactic]
+id = "TA0007"
+name = "Discovery"
+reference = "https://attack.mitre.org/tactics/TA0007/"
