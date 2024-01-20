@@ -5,7 +5,7 @@ import os
 
 
 url = "https://b6bcd8441d444584a3b4f74fa2a281e6.us-central1.gcp.cloud.es.io:9243/api/detection_engine/rules"
-api_key = "M1BnWEhvMEJISURER0Y0bEhIRWM6STFFcUtKQktSS082eXhlX0stVGUyUQ=="
+api_key = os.environ['ELASTIC_KEY']
 headers = {
     'Content-Type' : 'application/json;charset=UTF-8',
     'kbn-xsrf': 'true',
