@@ -10,7 +10,7 @@ from = "now-6m" #this is the default value
 #index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 #language = "kuery"
 
-name = "Brute Force"
+name = "Brute Force 10"
 
 risk_score = 50
 severity = "medium"
