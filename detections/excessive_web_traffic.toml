@@ -12,7 +12,7 @@ from = "now-6m" #this is the default value
 
 name = "Excessive WEB Traffic 3"
 
-risk_score = 70
+risk_score = 43
 severity = "critical"
 tags = ["WEB"]
 index = ["logs-*"]
