@@ -10,7 +10,7 @@ headers = {
 
 mitreData = requests.get(url,headers=headers).json()
 mitreMapped = {}
-#def getMapping(mitreData):
+failure = 0
 
 for object in mitreData['objects']:
     tactics = []
@@ -43,7 +43,7 @@ alert_data = {}
 
 
 
-for root, dirs, files in os.walk(r"C:\Users\ANAS\Desktop\Detection Engineering lab\TOML\Github\Converted_detections"):
+for root, dirs, files in os.walk(r"detections/"):
     for file in files:
         if file.endswith(".toml"):
             full_path = os.path.join(root, file)
@@ -86,6 +86,7 @@ for file in alert_data:
         #check to ensure MITRE TACTICS exist
         if tactic not in mitre_tactic_list:
             print("The MITRE Tactic supplied does not exist: "+"\"" + tactic +"\"" + " in " + file)
+            failure = 1
 
 
         #Check to make sure the MITRE Technique ID is valid
@@ -95,6 +96,7 @@ for file in alert_data:
                 pass
         except KeyError:
                 print("Invalid MITRE Technique ID: "+"\"" + technique_id +"\"" + " in " + file)
+                failure = 1
 
         #Check to see if the MITRE TID + Name combination is valid
         
@@ -104,7 +106,7 @@ for file in alert_data:
 
             if alert_name!=mitre_name:
                 print("MITRE Technique ID and Name mismatch in: " + file +" EXPECTED: " + "\"" + mitre_name +"\"" + " GIVEN: " + "\"" + alert_name + "\"")
-
+                failure = 1
         except KeyError:
             pass
          #Check to see if the MITRE subTID + Name Entry is valid
@@ -115,6 +117,7 @@ for file in alert_data:
                 alert_name = line['subtechnique_name']
                 if alert_name!=mitre_name:
                     print("MITRE Sub-technique ID and Name mismatch in: " + file +" EXPECTED: " + "\"" + mitre_name +"\"" + " GIVEN: " + "\"" + alert_name + "\"")
+                    failure = 1
         except KeyError:
             pass
         #Check if the technique is deprecated
@@ -122,7 +125,9 @@ for file in alert_data:
         try:
             if mitreMapped[technique_id]['deprecated'] == True:
                 print("Deprecated MITRE Technique ID: " + "\"" + technique_id +"\"" + " in " + file)
+                failure = 1
         except KeyError:
             pass
 
-
+if failure !=0:
+    sys.exit(1)
