@@ -10,10 +10,10 @@ from = "now-6m" #this is the default value
 #index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 #language = "kuery"
 
-name = "Brute Force 10"
+name = "Brute Force 100"
 
 risk_score = 50
-severity = "medium"
+severity = "low"
 tags = ["WEB"]
 index = ["logs-*"]
 type = "threshold"
