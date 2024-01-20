@@ -2,6 +2,7 @@ name: TOML & MITRE Validation
 
 
 on:
+  push:
   workflow_dispatch: 
 
 
