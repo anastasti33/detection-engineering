@@ -10,7 +10,7 @@ from = "now-6m" #this is the default value
 #index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 #language = "kuery"
 
-#name = "Excessive WEB Traffic"
+name = "Excessive WEB Traffic 2"
 
 risk_score = 70
 severity = "critical"
@@ -30,7 +30,7 @@ value = 100
 [[rule.threat]]
 framework = "MITRE ATT&CK"
 [[rule.threat.technique]]
-id = "T1123"
+id = "T1046"
 name = "Network Service Discovery"
 reference = "https://attack.mitre.org/techniques/T1046/"
 
