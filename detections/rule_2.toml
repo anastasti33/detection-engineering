@@ -3,17 +3,17 @@
 #updated_date = "2023/10/23"
 
 [rule]
-rule_id = "00000000-0000-0000-0000-000000000004"
+rule_id = "00000000-0000-0000-0000-000000000002"
 author = ["Anas TASTI"]
 description = "Excessive WEB Traffic"
 from = "now-6m" #this is the default value
 #index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 #language = "kuery"
 
-name = "anas rule 2"
+name = "Rule 2"
 
-risk_score = 50
-severity = "low"
+risk_score = 43
+severity = "critical"
 tags = ["WEB"]
 index = ["logs-*"]
 type = "threshold"
