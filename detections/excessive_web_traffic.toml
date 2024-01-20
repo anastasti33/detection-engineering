@@ -30,7 +30,7 @@ value = 100
 [[rule.threat]]
 framework = "MITRE ATT&CK"
 [[rule.threat.technique]]
-id = "T1046"
+id = "T1123"
 name = "Network Service Discovery"
 reference = "https://attack.mitre.org/techniques/T1046/"
 
