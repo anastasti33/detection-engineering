@@ -11,6 +11,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v5
+          with:
+            python-version: '3.12'
 
       - run: |
           python development/validation.py
