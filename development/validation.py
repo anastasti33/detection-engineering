@@ -2,17 +2,14 @@ import tomllib
 import sys
 import os
 
+failure = 0
+
 for root, dirs, files in os.walk(r"detections"):
     for file in files:
         if file.endswith(".toml"):
             full_path = os.path.join(root, file)
             with open(full_path,"rb") as toml:
                 alert = tomllib.load(toml)
-                #print(alert)
-
-
-
-#file = "alert_example.toml"
 
                 present_fields = []
                 missing_fields = []
@@ -38,5 +35,10 @@ for root, dirs, files in os.walk(r"detections"):
 
                 if missing_fields:
                     print("The following fields are missing in " + file + ": " + str(missing_fields))
+                    failure = 1
                 else:
                     print("Validation Passed for: "+ file)
+
+
+if failure !=0:
+    sys.exit(1)
