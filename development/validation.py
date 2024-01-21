@@ -16,7 +16,7 @@ for root, dirs, files in os.walk(r"detections"):
 
                 try:
 
-                    if alert['metadata']['creation_date:']:
+                    if alert['metadata']['creation_date']:
                         pass
                 except:
                     print("The metadata table does not contain a creation_date on: "+ full_path)
