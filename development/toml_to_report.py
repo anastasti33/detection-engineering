@@ -73,6 +73,11 @@ outF.write("# Detection Report\n")
 
 
 # Current Month
+outF.write("## Current Month\n")
+outF.write("### New Alerts\n")
+outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
+outF.write("| --- | --- | --- | --- | --- |\n")
+
 for line in current.values():
     date = line['date']
     name = line['name']
@@ -80,14 +85,14 @@ for line in current.values():
     risk_score = str(line['risk_score'])
     severity = line['severity']
 
-    outF.write("## Current Month\n")
-    outF.write("### New Alerts\n")
-    outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
-    outF.write("| --- | --- | --- | --- | --- |\n")
+    
     outF.write("|" + name + "|" + date + "|" + author + "|" + risk_score + "|" + severity + "\n")
 
     # Last Month
-
+outF.write("## Last Month\n")
+outF.write("### Alerts\n")
+outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
+outF.write("| --- | --- | --- | --- | --- |\n")
 for line in one_month.values():
     date = line['date']
     name = line['name']
@@ -95,14 +100,14 @@ for line in one_month.values():
     risk_score = str(line['risk_score'])
     severity = line['severity']
     
-    outF.write("## Last Month\n")
-    outF.write("### Alerts\n")
-    outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
-    outF.write("| --- | --- | --- | --- | --- |\n")
+
     outF.write("|" + name + "|" + date + "|" + author + "|" + risk_score + "|" + severity + "\n")
 
-    # Current Month
-
+    # Two Month
+outF.write("## Last Two Month\n")
+outF.write("### Alerts\n")
+outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
+outF.write("| --- | --- | --- | --- | --- |\n")
 for line in two_months.values():
     date = line['date']
     name = line['name']
@@ -110,10 +115,7 @@ for line in two_months.values():
     risk_score = str(line['risk_score'])
     severity = line['severity']
     
-    outF.write("## Last Two Month\n")
-    outF.write("### Alerts\n")
-    outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
-    outF.write("| --- | --- | --- | --- | --- |\n")
+
     outF.write("|" + name + "|" + date + "|" + author + "|" + risk_score + "|" + severity + "\n")
 
 
