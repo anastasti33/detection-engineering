@@ -4,7 +4,7 @@ import sys
 import os
 
 
-url = "https://b6bcd8441d444584a3b4f74fa2a281e6.us-central1.gcp.cloud.es.io:9243/api/detection_engine/rules"
+url = "https://79a1b0e85d504a7abb1d754c7a772d2b.us-central1.gcp.cloud.es.io:9243/api/detection_engine/rules"
 api_key = os.environ['ELASTIC_KEY']
 headers = {
     'Content-Type' : 'application/json;charset=UTF-8',
