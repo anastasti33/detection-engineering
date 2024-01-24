@@ -5,12 +5,12 @@ updated_date = "2023/10/23"
 [rule]
 rule_id = "00000000-0000-0000-0000-000000000003"
 author = ["Anas TASTI"]
-description = "Excessive WEB Traffic"
+description = "Brute Fore"
 from = "now-6m" #this is the default value
 #index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 #language = "kuery"
 
-name = "Brute Force 100"
+name = "Brute Force"
 
 risk_score = 50
 severity = "low"
