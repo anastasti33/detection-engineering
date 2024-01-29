@@ -5,12 +5,12 @@ updated_date = "2023/10/23"
 [rule]
 rule_id = "00000000-0000-0000-0000-000000000001"
 author = ["Anas TASTI"]
-description = "DETECT NMAP AND NIKTO"
+description = "Rule 5 desc"
 from = "now-6m" #this is the default value
 #index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 language = "kuery"
 
-name = "web scanner activity: NMAP & NIKTO"
+name = "Rule 5"
 
 risk_score = 70
 
