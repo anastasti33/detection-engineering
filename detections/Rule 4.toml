@@ -7,7 +7,7 @@ rule_id = "00000000-0000-0000-0000-000000000002"
 author = ["Anas TASTI"]
 description = "Rule 4 descr"
 from = "now-6m" #this is the default value
-index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
+#index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 #language = "kuery"
 
 name = "Rule 4"
