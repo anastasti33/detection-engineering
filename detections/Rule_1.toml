@@ -30,14 +30,14 @@ value = 100
 [[rule.threat]]
 framework = "MITRE ATT&CK"
 [[rule.threat.technique]]
-id = "T1046"
-name = "Network Service Discovery"
+id = "T1110"
+name = "Brute Force"
 reference = "https://attack.mitre.org/techniques/T1046/"
 
 
 [rule.threat.tactic]
-id = "TA0007"
-name = "Discovery"
-reference = "https://attack.mitre.org/tactics/TA0007/"
+id = "TA0006"
+name = "Credential Access"
+reference = "https://attack.mitre.org/tactics/TA0006/"
 
 
