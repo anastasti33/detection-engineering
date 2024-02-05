@@ -115,9 +115,9 @@ for key in techniques:
 
     outF.write("\n\t\t{")
     outF.write("\n\t\t\t\"techniqueID\": \"" + technique_id + "\",")
-    outF.write("\n\t\t\t\"tactic\": \"" + tactic + "\",")
+    outF.write("\n\t\t\t\"tactice\": \"" + tactic + "\",")
     outF.write("\n\t\t\t\"score\": \"" + count + "\",")
-    outF.write("\n\t\t\t\"color\": \"\""#8dcbad",")
+    outF.write("\n\t\t\t\"color\": \"#8dcbad\",")
     outF.write("\n\t\t\t\"comment\": \"\""",")
     outF.write("\n\t\t\t\"enabled\": true,")
     outF.write("\n\t\t\t\"metadata\": [],")
