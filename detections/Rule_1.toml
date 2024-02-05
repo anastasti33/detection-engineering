@@ -12,8 +12,8 @@ from = "now-6m" #this is the default value
 
 name = " Rule 1"
 
-risk_score = 50
-severity = "low"
+risk_score = 100
+severity = "critical"
 tags = ["WEB"]
 index = ["logs-*"]
 type = "threshold"
