@@ -37,9 +37,9 @@
 "techniques": [
 		{
 			"techniqueID": "T1046",
-			"tactic": "discovery",
+			"tactice": "discovery",
 			"score": "25",
-			"color": "",
+			"color": "#8dcbad",
 			"comment": "",
 			"enabled": true,
 			"metadata": [],
