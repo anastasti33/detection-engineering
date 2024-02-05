@@ -1,0 +1,43 @@
+[metadata]
+creation_date = "2023/12/12"
+updated_date = "2023/10/23"
+
+[rule]
+rule_id = "00000000-0000-0000-0000-0000000000025"
+author = ["Anas TASTI"]
+description = "Rule 25"
+from = "now-6m" #this is the default value
+#index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
+#language = "kuery"
+
+name = " Rule 25"
+
+risk_score = 50
+severity = "low"
+tags = ["WEB"]
+index = ["logs-*"]
+type = "threshold"
+
+query = ''' event.dataset : zeek.http '''
+
+[rule.threshold]
+field = ["source.ip"]
+value = 100
+
+
+#MITRE section
+
+[[rule.threat]]
+framework = "MITRE ATT&CK"
+[[rule.threat.technique]]
+id = "T1046"
+name = "Network Service Discovery"
+reference = "https://attack.mitre.org/techniques/T1046/"
+
+
+[rule.threat.tactic]
+id = "TA0007"
+name = "Discovery"
+reference = "https://attack.mitre.org/tactics/TA0007/"
+
+
