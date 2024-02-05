@@ -83,7 +83,7 @@ end = """
             "#8ec843ff"
         ],
         "minValue": 0,
-        "maxValue": 3
+        "maxValue": 100
     },
     "legendItems": [],
     "metadata": [],
