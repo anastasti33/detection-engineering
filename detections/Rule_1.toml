@@ -10,7 +10,7 @@ from = "now-6m" #this is the default value
 #index = ["winlogbeat-*", "logs-endpoint.events.*", "logs-windows.*"]
 #language = "kuery"
 
-name = " Rule 1"
+name = " Rule 111"
 
 risk_score = 100
 severity = "critical"
