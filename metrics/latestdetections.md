@@ -16,7 +16,7 @@
 | --- | --- | --- | --- | --- |
 | Rule 15|2023/12/12|['Anas TASTI']|50|low
 | Rule 23|2023/12/12|['Anas TASTI']|50|low
-| Rule 1|2023/12/12|['Anas TASTI']|50|low
+| Rule 1|2023/12/12|['Anas TASTI']|100|critical
 | Rule 10|2023/12/12|['Anas TASTI']|50|low
 | Rule 25|2023/12/12|['Anas TASTI']|50|low
 | Rule 21|2023/12/12|['Anas TASTI']|50|low
