@@ -36,9 +36,9 @@
 	"hideDisabled": false,
 "techniques": [
 		{
-			"techniqueID": "T1046",
-			"tactice": "discovery",
-			"score": "22",
+			"techniqueID": "T1110",
+			"tactice": "credential access",
+			"score": "1",
 			"color": "#8dcbad",
 			"comment": "",
 			"enabled": true,
@@ -47,9 +47,9 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1110",
-			"tactice": "credential access",
-			"score": "1",
+			"techniqueID": "T1046",
+			"tactice": "discovery",
+			"score": "22",
 			"color": "#8dcbad",
 			"comment": "",
 			"enabled": true,
