@@ -36,17 +36,6 @@
 	"hideDisabled": false,
 "techniques": [
 		{
-			"techniqueID": "T1110",
-			"tactice": "credential access",
-			"score": "1",
-			"color": "#8dcbad",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
 			"techniqueID": "T1046",
 			"tactice": "discovery",
 			"score": "22",
@@ -71,6 +60,17 @@
 		{
 			"techniqueID": "T1098",
 			"tactice": "privilege escalation",
+			"score": "1",
+			"color": "#8dcbad",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110",
+			"tactice": "credential access",
 			"score": "1",
 			"color": "#8dcbad",
 			"comment": "",
