@@ -1,26 +1,26 @@
 name,date,author,risk_score,severity,tactic,technique,subtechnique
- Rule 11,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 23,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 10,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 19,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 15,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 14,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 111,2023/12/12,['Anas TASTI'],100,critical,Credential Access,T1110 - Brute Force,none - none
  Rule 12,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
  Rule 24,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 14,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 20,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
-Rule 5,2024/12/13,['Anas TASTI'],70,critical,Discovery,T1046 - Network Service Discovery,none - none
-Rule 3,2023/11/20,['Anas TASTI'],50,low,Privilege Escalation,T1547 - Boot or Logon Autostart Execution,none - none
- Rule 22,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
-Rule 4,2024/01/24,['Anas TASTI'],43,critical,Privilege Escalation,T1098 - Account Manipulation,none - none
- Rule 17,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 111,2023/12/12,['Anas TASTI'],100,critical,Credential Access,T1110 - Brute Force,none - none
- Rule 13,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 8,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
-Rule 2,2024/01/25,['Anas TASTI'],43,critical,Discovery,T1046 - Network Service Discovery,none - none
- Rule 7,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 9,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 23,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
  Rule 16,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 15,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 17,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+Rule 2,2024/01/25,['Anas TASTI'],43,critical,Discovery,T1046 - Network Service Discovery,none - none
+Rule 5,2024/12/13,['Anas TASTI'],70,critical,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 22,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
  Rule 21,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
- Rule 6,2024/02/01,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
  Rule 18,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 13,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+Rule 4,2024/01/24,['Anas TASTI'],43,critical,Privilege Escalation,T1098 - Account Manipulation,none - none
+ Rule 6,2024/02/01,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 7,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 11,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 19,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 20,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
  Rule 25,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 10,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+Rule 3,2023/11/20,['Anas TASTI'],50,low,Privilege Escalation,T1547 - Boot or Logon Autostart Execution,none - none
+ Rule 8,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
+ Rule 9,2023/12/12,['Anas TASTI'],50,low,Discovery,T1046 - Network Service Discovery,none - none
