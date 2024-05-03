@@ -11,4 +11,3 @@
 ### Alerts
 | Rule | Date | Author | Risk Score | Severity |
 | --- | --- | --- | --- | --- |
-| Rule 6|2024/02/01|['Anas TASTI']|50|low
