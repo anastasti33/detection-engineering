@@ -58,8 +58,8 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1098",
-			"tactice": "privilege escalation",
+			"techniqueID": "T1110",
+			"tactice": "credential access",
 			"score": "1",
 			"color": "#8dcbad",
 			"comment": "",
@@ -69,8 +69,8 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1110",
-			"tactice": "credential access",
+			"techniqueID": "T1098",
+			"tactice": "privilege escalation",
 			"score": "1",
 			"color": "#8dcbad",
 			"comment": "",
