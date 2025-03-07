@@ -11,4 +11,3 @@
 ### Alerts
 | Rule | Date | Author | Risk Score | Severity |
 | --- | --- | --- | --- | --- |
-|Rule 5|2024/12/13|['Anas TASTI']|70|critical
