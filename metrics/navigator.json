@@ -58,7 +58,7 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1098",
+			"techniqueID": "T1547",
 			"tactice": "privilege escalation",
 			"score": "1",
 			"color": "#8dcbad",
@@ -69,7 +69,7 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1547",
+			"techniqueID": "T1098",
 			"tactice": "privilege escalation",
 			"score": "1",
 			"color": "#8dcbad",
